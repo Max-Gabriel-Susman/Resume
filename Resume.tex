@@ -1,0 +1,145 @@
+\documentclass[letterpaper,11pt]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Max Gabriel Susman}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+  \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+\end{tabular*}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Utah State University}{Logan, UT}
+      {Student Developer}{April 2019 - September 2019}
+      \resumeItemListStart
+        \resumeItem{Linux development}
+          {I wrote drivers and utilities for a linux distro that was under development .}
+        \resumeItem{Web Development}
+          {I rewrote a java applet as a lamp application that allowed technicians to interface with a roadside weather information system.}
+        \resumeItem{Python scripting}
+          {I helped write a set of python scripts that interfaced the backend of the php web application mentioned above and the hardware the roadside weather information system was composed of(digital road signs, various sensors). }
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {USU Get Away Special}{Logan, UT}
+      {Research Fellow and Software Developer}{Jan 2014 - Oct 2016}
+      \resumeItemListStart
+        \resumeItem{drivers written in C/C++}
+          {I wrote a couple of drivers for the sensors on a student led Project that was building a Cube Satellite.}
+        \resumeItem{python library}
+          {I contributed to a set of python libraries that were a front end to the drivers mentioned above}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Boomerang Systems}{North Logan, UT}
+      {Robotic Systems Tester}{Summers of 2012 and 2013}
+      \resumeItemListStart
+       \resumeItem{Software Testing}
+          {My first experience working around code, I wasn't writing any software or tests but I was encountering C/C++ on a daily basis and Interpreting GCC/G++ output while running Autonomous Vehicles through various tests in various conditions to expose Bugs.}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+% Skills & Knowledge
+\section{Applicable Skills & Knowledge}
+  \resumeSubHeadingListStart
+    \resumeItem{Programming Languages(from most to least profficient)}
+      {C#L, Swift, Java, Kotlin, and Objective C.}
+    \resumeItem{Additional Tools and Languages}
+      {Interface Builder, Javascript, PHP, Python, Groovy, XML, JSON}
+    \resumeItem{IDEs}
+      {Visual Studio For Mac, Android Studio, Xcode}
+    \resumeItem{Shells, Build Tools, Frameworks}
+      { XMl(XAML), Gradle, Maven, Xamarin Storyboards(IB),Git and Github, Cocoapods}
+    \resumeItem{Build Tools}
+      {Gradle, Maven, CocoaPods}
+    \resumeItem{Shells}
+      {Bash was the shell I used exclusively until I got a Mac this year and now I use Zsh.}
+    \resumeItem{OSs}
+      {Almost all of my development experience occurred in various flavors of Debian with a little bit of Redhat thrown in until I made a transition to macOS this year.}
+    \resumeItem{Additional Knowledge}
+      {Datastructures, threading, Asynchronous Programming, MVVM & MVC Architectures}
+    \resumeItem{Soft Skills}
+      {I'm eager to learn and happy to be taught, I enjoy collaborating with others and teaching them what I can. }
+      
+    
+  \resumeSubHeadingListEnd
+\end{document}
+
